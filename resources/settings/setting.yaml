@@ -7,17 +7,5 @@ wait_timeout:
   medium: 10s
   long: 20s
 
-user_info:
-  user_name:
-    standard: standard_user
-    locked: locked_out_user
-    problem: problem_user
-    glitch: performance_glitch_user
-    error: error_user
-    visual: visual_user
-  password: secret_sauce
-  name:
-    first_name: first_name_1
-    last_name: last_name_1
-  postal_code: 12345
+
 
