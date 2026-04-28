@@ -1,0 +1,8 @@
+url:
+  test_web: https://www.saucedemo.com/
+
+wait_timeout:
+  short: 01s
+  normal: 05s
+  medium: 10s
+  long: 20s

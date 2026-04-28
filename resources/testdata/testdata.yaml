@@ -1,0 +1,10 @@
+user_info:
+  user_name:
+    standard: standard_user
+    locked: locked_out_user
+  password: secret_sauce
+  
+shipping_address:
+  first_name: first_name_1
+  last_name: last_name_1
+  postal_code: 12345
