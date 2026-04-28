@@ -6,6 +6,3 @@ wait_timeout:
   normal: 05s
   medium: 10s
   long: 20s
-
-
-
