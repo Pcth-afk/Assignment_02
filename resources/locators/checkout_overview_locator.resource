@@ -2,5 +2,5 @@
 Resource    ${CURDIR}/../import.resource
 
 *** Variables ***
-&{checkout_overview_page_locator}
+&{checkout_overview_locator}
 ...    btn_finish=id=finish

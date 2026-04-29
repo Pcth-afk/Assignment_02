@@ -16,7 +16,7 @@ Resource    ${CURDIR}/../keywords/ui/pages/web/checkout_overview_page.resource
 Resource    ${CURDIR}/locators/login_page_locator.resource
 Resource    ${CURDIR}/locators/your_cart_locator.resource
 Resource    ${CURDIR}/locators/product_page_locator.resource
-Resource    ${CURDIR}/locators/checkout_overview.resource
+Resource    ${CURDIR}/locators/checkout_overview_locator.resource
 
 # YAML
 Variables    ${CURDIR}/settings/setting.yaml
