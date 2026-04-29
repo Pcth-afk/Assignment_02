@@ -7,10 +7,10 @@ Library    String
 Resource    ${CURDIR}/../keywords/common/common_web.resource
 
 #locators
-Resource    ${CURDIR}/locators/login_page_locator.resource
+Resource    ${CURDIR}/locators/login_locator.resource
 Resource    ${CURDIR}/locators/your_cart_locator.resource
-Resource    ${CURDIR}/locators/product_page_locator.resource
-Resource    ${CURDIR}/locators/checkout_your_information_page_locator.resource
+Resource    ${CURDIR}/locators/product_locator.resource
+Resource    ${CURDIR}/locators/checkout_your_information_locator.resource
 
 # YAML
 Variables    ${CURDIR}/settings/setting.yaml
