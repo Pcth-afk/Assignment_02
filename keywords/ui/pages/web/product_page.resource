@@ -20,4 +20,5 @@ Click open menu
 
 Click logout in menu
     [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ
+    SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']}    
     common_web.Wait and click element when ready    locator=${product_locator['txt_logout']}
