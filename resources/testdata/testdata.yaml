@@ -16,3 +16,11 @@ product_name:
   product_4: Sauce Labs Fleece Jacket
   product_5: Sauce Labs Onesie
   product_6: Test.allTheThings() T-Shirt (Red)
+
+product_add_to_cart_id:
+  product_1: sauce-labs-backpack
+  product_2: sauce-labs-bike-light
+  product_3: sauce-labs-bolt-t-shirt
+  product_4: sauce-labs-fleece-jacket
+  product_5: sauce-labs-labs-onesie
+  product_6: test.allthethings()-t-shirt-(red)

@@ -12,7 +12,7 @@ Wait and click element when ready
     [Documentation]    กดปุ่มที่กำหนดเมื่อปุ่มพร้อมใช้งาน
     [Arguments]    ${locator}
     SeleniumLibrary.Wait Until Element Is Enabled    locator=${locator}
-    SeleniumLibrary.Click Button    locator=${locator}
+    SeleniumLibrary.Click Element    locator=${locator}
 
 Press escape
     [Documentation]    กดปุ่ม Escape 
