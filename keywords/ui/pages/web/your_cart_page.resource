@@ -10,9 +10,9 @@ Click remove product by name
     [Documentation]    Replace product name ที่ต้องการ Remove จากนั้นกดปุ่ม Remove
     [Arguments]    ${product_name}
     ${new_locator}=    common_web.Replace locator with target text    locator=${your_cart_page_locator['btn_remove']}    replace_string=${product_name}
-    common_web.Wait and click element when ready    locator=${your_cart_page_locator['new_locator']}
+    common_web.Wait and click element when ready    locator=${new_locator}
 
-Verify chosen product
+Verify that product is displayed correctly
     [Documentation]    ตรวจสอบสินค้าที่กด Add to cart ว่าสินค้ามีอยู่ในหน้า Your cart หรือไม่
     [Arguments]    ${product_name}
     ${new_locator}=    common_web.Replace locator with target text    locator=${your_cart_page_locator['txt_product']}    replace_string=${product_name}
