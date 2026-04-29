@@ -9,9 +9,9 @@ Click login button
 Input username
     [Documentation]    ใช้สำหรับกรอกชื่อ username 
     [Arguments]    ${username}
-    common_web.Input text to element when ready    locator=${login_locator['lbl_username']}    text=${username}
+    common_web.Input text to element when ready    locator=${login_locator['txt_username']}    text=${username}
 
 Input password
     [Documentation]    ใช้สำหรับกรอกรหัสผ่าน 
     [Arguments]    ${password}
-    common_web.Input text to element when ready    locator=${login_locator['lbl_password']}    text=${password}
+    common_web.Input text to element when ready    locator=${login_locator['txt_password']}    text=${password}

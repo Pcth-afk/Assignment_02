@@ -8,4 +8,4 @@ Click finish button
 
 Verify that product is purchased completely
     [Documentation]    ตรวจสอบว่าการสั่งซื้อสินค้าเสร็จสมบูรณ์
-    SeleniumLibrary.Page Should Contain Element    locator=${checkout_overview_locator['txt_purchase_complete']}
+    SeleniumLibrary.Wait Until Page Contains Element    ${checkout_overview_locator['lbl_purchase_complete']}
