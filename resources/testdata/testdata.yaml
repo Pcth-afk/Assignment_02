@@ -8,3 +8,11 @@ shipping_address:
   first_name: first_name_1
   last_name: last_name_1
   postal_code: 12345
+
+product_name:
+  product_1: Sauce Labs Backpack
+  product_2: Sauce Labs Bike Light
+  product_3: Sauce Labs Bolt T-Shirt
+  product_4: Sauce Labs Fleece Jacket
+  product_5: Sauce Labs Onesie
+  product_6: Test.allTheThings() T-Shirt (Red)

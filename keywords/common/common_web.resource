@@ -10,9 +10,9 @@ Open browser and maximize browser window
 
 Wait and click element when ready
     [Documentation]    กดปุ่มที่กำหนดเมื่อปุ่มพร้อมใช้งาน
-    [Arguments]    ${element}
-    SeleniumLibrary.Wait Until Element Is Enabled    locator=${element}
-    SeleniumLibrary.Click Button    locator=${element}
+    [Arguments]    ${locator}
+    SeleniumLibrary.Wait Until Element Is Enabled    locator=${locator}
+    SeleniumLibrary.Click Button    locator=${locator}
 
 Press escape
     [Documentation]    กดปุ่ม Escape 
