@@ -3,7 +3,7 @@ Resource    ${CURDIR}/../../../../resources/import.resource
 
 *** Keywords ***
 Click add to cart button by product name
-    [Documentation]
+    [Documentation]    กดปุ่ม Add to cart เพื่อเพิ่มสินค้าลงตะกร้าสินค้า โดยอ้างอิงจากการ Replace ชื่อสินค้า
     [Arguments]    ${product_name}
     ${new_locator}=    common_web.Replace locator with target text    locator=${product_page_locator[btn_add_to_cart]}    replace_string=${product_name}  
     common_web.Wait and click element when ready    locator=${new_locator}
