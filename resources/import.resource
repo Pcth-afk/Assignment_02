@@ -8,7 +8,7 @@ Resource    ${CURDIR}/../keywords/common/common_web.resource
 
 # FEATURE
 Resource    ${CURDIR}/../keywords/ui/feature/web/login_feature.resource
-Resource    ${CURDIR}/../keywords/ui/feature/web/input_your_information.resource
+Resource    ${CURDIR}/../keywords/ui/feature/web/checkout_your_information_feature.resource
 
 # PAGEs
 Resource    ${CURDIR}/../keywords/ui/pages/web/login_page.resource
