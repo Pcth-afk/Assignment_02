@@ -7,7 +7,7 @@ Click checkout button
     common_web.Wait and click element when ready    locator=${your_cart_page_locator['btn_checkout']}
 
 Click remove product by name
-    [Documentation]    Replace product name ที่ต้องการ Remove จากนั้นกดปุ่ม Remove
+    [Documentation]    ทำการ Replace ชื่อสินค้าที่ต้องการ จากนั้นกดปุ่ม Remove เพื่อนำสินค้าออกจากตะกร้า
     [Arguments]    ${product_name}
     ${new_locator}=    common_web.Replace locator with target text    locator=${your_cart_page_locator['btn_remove']}    replace_string=${product_name}
     common_web.Wait and click element when ready    locator=${new_locator}
