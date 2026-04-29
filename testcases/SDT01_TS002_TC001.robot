@@ -13,7 +13,7 @@ SDT01_TS002_TC001 - เช็คจำนวนสินค้าที่กด
     ...    7. กดปุ่มตระกร้าสินค้า
     ...    8. กดปุ่ม Remove ที่สินค้าที่ 1
     ...    9. กดปุ่ม Remove ที่สินค้าที่ 2
-    [Tags]    function_id:WEB_SDT_01    test_scenario:TS_002    test_id:SDT01_TS002_TC001    function_name:ทดสอบซื้อสินค้าให้สำเร็จ
+    [Tags]    function_id:WEB_SDT_01    test_scenario:TS_002    test_id:SDT01_TS002_TC001    function_name:ทดสอบการลบสินค้าในตะกร้า
     # [Step 1] - เข้าเว็บไซต์ saucedemo 
     common_web.Open browser and maximize browser window    url=${url['test_web']}
 
