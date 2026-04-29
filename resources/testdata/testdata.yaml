@@ -8,3 +8,11 @@ shipping_address:
   first_name: first_name_1
   last_name: last_name_1
   postal_code: 12345
+
+product_add_to_cart_id:
+  product_1: sauce-labs-backpack
+  product_2: sauce-labs-bike-light
+  product_3: sauce-labs-bolt-t-shirt
+  product_4: sauce-labs-fleece-jacket
+  product_5: sauce-labs-labs-onesie
+  product_6: test.allthethings()-t-shirt-(red)
