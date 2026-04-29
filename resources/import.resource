@@ -12,10 +12,11 @@ Resource    ${CURDIR}/../keywords/ui/pages/web/product_page.resource
 Resource    ${CURDIR}/../keywords/ui/pages/web/your_cart_page.resource
 Resource    ${CURDIR}/../keywords/ui/pages/web/checkout_overview_page.resource
 
-#Locator
-Resource    ${CURDIR}/locators/login_page_locator.resource
+#locators
+Resource    ${CURDIR}/locators/login_locator.resource
 Resource    ${CURDIR}/locators/your_cart_locator.resource
-Resource    ${CURDIR}/locators/product_page_locator.resource
+Resource    ${CURDIR}/locators/product_locator.resource
+Resource    ${CURDIR}/locators/checkout_your_information_locator.resource
 Resource    ${CURDIR}/locators/checkout_overview_locator.resource
 
 # YAML
