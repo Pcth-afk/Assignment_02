@@ -2,3 +2,4 @@ venv
 *.png
 dryrun
 report/results
+resources/report

@@ -20,3 +20,7 @@ Input postal code
 Click continue button in checkout page
     [Documentation]    กดปุ่ม Continue ในหน้า Checkout: Your Information
     common_web.Wait and click element when ready    locator=${checkout_your_information_locator['btn_continue']}
+
+Verify that checkout: your information page is loaded successfully
+    [Documentation]    ตรวจสอบหน้า Checkout: your information ว่าโหลดเสร็จสมบูรณ์
+    SeleniumLibrary.Wait Until Page Contains Element    locator=${checkout_your_information_locator['lbl_chekout_your_information']}
