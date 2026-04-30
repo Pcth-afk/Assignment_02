@@ -19,9 +19,7 @@ Click open menu
     common_web.Wait and click element when ready    locator=${product_locator['btn_menu']}
 
 Click logout in menu
-    [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ
-    SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']}    
-    common_web.Wait and click element when ready    locator=${product_locator['txt_logout']}
+    [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ    
     common_web.Wait and click element when ready    locator=${product_locator['txt_logout']}
 
 Verify that product page is loaded successfully
@@ -33,3 +31,8 @@ Verify that add to cart is worked successfully
     [Arguments]    ${product_qty}
     ${new_locator} =    common_web.Replace locator with target text    locator=${product_locator['btn_shopping_cart_number']}    replace_string=${product_qty}
     SeleniumLibrary.Page Should Contain Element    locator=${new_locator}
+
+Verify that tab menu is loaded successfully
+    [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ
+    SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']}    
+    

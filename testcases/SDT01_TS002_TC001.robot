@@ -17,6 +17,9 @@ SDT01_TS002_TC001 - เช็คจำนวนสินค้าที่กด
     # [Step 1-4] - เปิดเว็บไซต์และเข้าสู่ระบบ
     login_feature.Open website and login to saucedemo web   usrname=${user_info['user_name']['standard']}    password=${user_info['password']}
     
+    # [Expected 4] - ตรวจสอบหน้า Product ว่าโหลดเสร็จสมบูรณ์
+    product_page.Verify that product page is loaded successfully
+
     # [Step 5] - กดปุ่ม Add to cart ที่สินค้าที่ 1
     product_page.Click add to cart button by product name    product_name=${product_add_to_cart_id['product_1']}
 
