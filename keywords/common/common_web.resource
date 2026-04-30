@@ -58,3 +58,14 @@ Replace locator with target text
     [Arguments]    ${locator}    ${replace_string}
     ${new_locator}=    String.Replace String    ${locator}    ***replace***     ${replace_string}
     RETURN    ${new_locator}
+
+Click open menu
+    [Documentation]    
+    ...    กดปุ่มเมนูเพื่อเปิดหน้าตัวเลือก
+    ...    โดยจะมี 4 ตัวเลือกคือ All Items, About, Logout, Reset App State
+    SeleniumLibrary.Wait Until Element Is Enabled    locator=${product_locator['btn_menu']}
+    SeleniumLibrary.Click Element    locator=${product_locator['btn_menu']}
+
+Verify that tab menu is loaded successfully
+    [Documentation]    ตรวจสอบว่าแท็บ menu โหลดเสร็จสมบูรณ์
+    SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']} 
