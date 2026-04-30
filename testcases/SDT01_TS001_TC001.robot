@@ -48,11 +48,11 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
     ...    lastname=${shipping_address['last_name']}    
     ...    postalcode=${shipping_address['postal_code']}
 
-    #[Expected 11] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Overview สำเร็จ
+    # [Expected 11] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Overview สำเร็จ
     checkout_overview_page.Verify that checkout: overview page is loaded successfully
 
     # [Step 12] - กดปุ่ม Fisnish เพื่อเข้าสู้หน้า Checkout: Complete!
     checkout_overview_page.Click finish button
 
-    #[Expected 12] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Complete! สำเร็จ
+    # [Expected 12] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Complete! สำเร็จ
     checkout_overview_page.Verify that product is purchased completely
