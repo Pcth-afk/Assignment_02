@@ -16,6 +16,7 @@ Resource    ${CURDIR}/../keywords/ui/pages/web/product_page.resource
 Resource    ${CURDIR}/../keywords/ui/pages/web/your_cart_page.resource
 Resource    ${CURDIR}/../keywords/ui/pages/web/checkout_overview_page.resource
 Resource    ${CURDIR}/../keywords/ui/pages/web/checkout_your_information_page.resource
+Resource    ${CURDIR}/../keywords/ui/pages/web/tab_menu_page.resource
 
 #locators
 Resource    ${CURDIR}/locators/login_locator.resource
@@ -27,3 +28,4 @@ Resource    ${CURDIR}/locators/checkout_overview_locator.resource
 # YAML
 Variables    ${CURDIR}/settings/setting.yaml
 Variables    ${CURDIR}/testdata/testdata.yaml
+Variables    ${CURDIR}/translation/web/th.yaml

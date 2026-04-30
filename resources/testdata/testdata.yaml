@@ -24,3 +24,11 @@ product_add_to_cart_id:
   product_4: sauce-labs-fleece-jacket
   product_5: sauce-labs-labs-onesie
   product_6: test.allthethings()-t-shirt-(red)
+
+product_qty:
+  one_piece: 1
+  two_piece: 2
+  three_piece: 3
+  four_piece: 4
+  five_piece: 5
+  six_piece: 6

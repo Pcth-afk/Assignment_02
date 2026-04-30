@@ -1,5 +1,5 @@
 url:
-  test_web: https://www.saucedemo.com/
+  saucedemo: https://www.saucedemo.com/
 
 wait_timeout:
   short: 01s

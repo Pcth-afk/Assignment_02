@@ -15,3 +15,7 @@ Input password
     [Documentation]    ใช้สำหรับกรอกรหัสผ่าน 
     [Arguments]    ${password}
     common_web.Input text to element when ready    locator=${login_locator['txt_password']}    text=${password}
+
+Verify that login page is loaded successfully
+    [Documentation]    ตรวจสอบว่าหน้าเว็บ Login โหลดเสร็จสมบูรณ์   
+    SeleniumLibrary.Page Should Contain Element    locator=${login_locator['btn_login']}
