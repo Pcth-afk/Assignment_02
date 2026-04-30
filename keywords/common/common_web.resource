@@ -59,7 +59,7 @@ Replace locator with target text
     ${new_locator}=    String.Replace String    ${locator}    ***replace***     ${replace_string}
     RETURN    ${new_locator}
 
-Click open menu
+Click open tab menu
     [Documentation]    
     ...    กดปุ่มเมนูเพื่อเปิดหน้าตัวเลือก
     ...    โดยจะมี 4 ตัวเลือกคือ All Items, About, Logout, Reset App State
