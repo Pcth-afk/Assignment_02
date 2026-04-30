@@ -23,3 +23,6 @@ Verify that product is not displayed
     [Arguments]    ${product_name}
     ${new_locator}=    common_web.Replace locator with target text    locator=${your_cart_locator['txt_product']}    replace_string=${product_name}
     SeleniumLibrary.Page Should Not Contain Element  locator=${new_locator}
+Verify that your cart page is loaded successfully
+    [Documentation]    ตรวจสอบหน้า Checkout: your information ว่าโหลดเสร็จสมบูรณ์
+    SeleniumLibrary.Wait Until Page Contains Element    locator=${your_cart_locator['lbl_your_cart']}
