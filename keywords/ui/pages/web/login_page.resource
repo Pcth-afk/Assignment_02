@@ -21,5 +21,5 @@ Verify that login page is loaded successfully
     SeleniumLibrary.Page Should Contain Element    locator=${login_locator['btn_login']}
 
 Verify that error message is appeared correctly
-    [Documentation]    ตรวจสอบข้อความ 'Epic sadface: Sorry, this user has been locked out.' ปรากฏขึ้นเมื่อ Login ด้วย username ที่ถูกบล็อค
+    [Documentation]    ตรวจสอบข้อความ 'Epic sadface: Sorry, this user has been locked out.' ปรากฏขึ้นเมื่อ Login ด้วย username ที่ถูกล็อค
     SeleniumLibrary.Page Should Contain Element    locator=${login_locator['txt_error_login']}
