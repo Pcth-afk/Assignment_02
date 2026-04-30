@@ -5,3 +5,7 @@ translation_web:
     check_out_your_information: 'Checkout: Your Information'
     checkout_overview: 'Checkout: Overview'
     checkout_complete: 'Checkout: Complete!'
+
+login_page:
+  error_message:
+    error_locked: 'Epic sadface: Sorry, this user has been locked out'
