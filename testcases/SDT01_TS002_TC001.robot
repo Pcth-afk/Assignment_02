@@ -15,7 +15,7 @@ SDT01_TS002_TC001 - เช็คจำนวนสินค้าที่กด
     ...    9. กดปุ่ม Remove ที่สินค้าที่ 2
     [Tags]    function_id:WEB_SDT_01    test_scenario:TS_002    test_id:SDT01_TS002_TC001    function_name:ทดสอบการลบสินค้าในตะกร้า
     # [Step 1-4] - เปิดเว็บไซต์และเข้าสู่ระบบ
-    login_feature.Open website and login to saucedemo web   usrname=${user_info['user_name']['standard']}    password=${user_info['password']}
+    login_feature.Open website and login to saucedemo web   username=${user_info['user_name']['standard']}    password=${user_info['password']}
     
     # [Expected 4] - ตรวจสอบหน้า Product ว่าโหลดเสร็จสมบูรณ์
     product_page.Verify that product page is loaded successfully

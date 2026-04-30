@@ -19,7 +19,7 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
     ...    12. กดปุ่ม Fisnish
     [Tags]    function_id:WEB_SDT_01    test_scenario:TS_001    test_id:SDT01_TS001_TC001    function_name:ทดสอบซื้อสินค้าให้สำเร็จ
     # [Step 1-4] - เปิดเว็บไซต์กรอก username password และกด Login เพื่อเข้าสู่หน้า Product
-    login_feature.Open website and login to saucedemo web    usrname=${user_info['user_name']['standard']}    password=${user_info['password']}
+    login_feature.Open website and login to saucedemo web    username=${user_info['user_name']['standard']}    password=${user_info['password']}
     
     # [Expected 4] - ตรวจสอบหน้า Product ว่าโหลดเสร็จสมบูรณ์
     product_page.Verify that product page is loaded successfully

@@ -33,6 +33,6 @@ Verify that add to cart is worked successfully
     SeleniumLibrary.Page Should Contain Element    locator=${new_locator}
 
 Verify that tab menu is loaded successfully
-    [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ
+    [Documentation]    ตรวจสอบว่าแท็บ menu โหลดเสร็จสมบูรณ์
     SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']}    
     

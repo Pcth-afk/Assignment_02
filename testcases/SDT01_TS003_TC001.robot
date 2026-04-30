@@ -13,7 +13,7 @@ SDT01_TS003_TC001 - ทดสอบการทำงานของปุ่ม
     ...    6. กดปุ่ม Logout
     [Tags]    function_id:WEB_SDT_01    test_scenario:TS_003    test_id:SDT01_TS003_TC001    function_name:ทดสอบการ login และ logout
     # [Step 1-4] - กรอก username password และกด Login เพื่อเข้าสู่หน้ารายการสินค้า
-    login_feature.Open website and login to saucedemo web    usrname=${user_info['user_name']['standard']}    password=${user_info['password']}
+    login_feature.Open website and login to saucedemo web    username=${user_info['user_name']['standard']}    password=${user_info['password']}
     
     # [Expected 4] - ตรวจสอบหน้า Product ว่าโหลดเสร็จสมบูรณ์
     product_page.Verify that product page is loaded successfully
