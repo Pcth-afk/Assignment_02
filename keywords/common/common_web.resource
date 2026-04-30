@@ -3,6 +3,7 @@ Resource    ${CURDIR}/../../resources/import.resource
 
 *** Keywords ***
 Open browser and maximize browser window
+    [Documentation]    เปิดเบราว์เซอร์ในโหมดไม่ระบุตัวตน พร้อมขยายหน้าต่างให้เต็มจอ
     [Arguments]    ${url}    ${browser}=chrome
     ${options}=    BuiltIn.Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     BuiltIn.Call Method    ${options}    add_argument    --incognito
