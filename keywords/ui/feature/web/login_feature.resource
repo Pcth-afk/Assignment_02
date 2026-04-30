@@ -9,9 +9,9 @@ Open website and login to saucedemo web
     ...    กรอก username และ password
     ...    ตรวจสอบการเติม username และ password 
     ...    กดปุ่ม Login เพื่อเข้าสู่หน้า Product
-    [Arguments]    ${usrname}    ${password}    
+    [Arguments]    ${username}    ${password}    
     common_web.Open browser and maximize browser window    url=${url['saucedemo']}
     login_page.Verify that login page is loaded successfully
-    login_page.Input username    username=${usrname}
+    login_page.Input username    username=${username}
     login_page.Input password    password=${password}
     login_page.Click login button
