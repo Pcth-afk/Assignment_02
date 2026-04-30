@@ -28,7 +28,7 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
     product_page.Click add to cart button by product name    product_name=${product_add_to_cart_id['product_1']}
 
     # [Expected 5] - มีจำนวนสินค้า 1 ชิ้นปรากฏที่ปุ่มตะกร้าสินค้า
-    product_page.Verify that add to cart is worked successfully    product_amount=1
+    product_page.Verify that add to cart is worked successfully    product_qty=${product_qty['one_piece']}
 
     # [Step 6] - กดปุ่มตระกร้าสินค้า
     product_page.Click shopping cart button

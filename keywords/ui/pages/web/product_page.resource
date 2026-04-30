@@ -28,6 +28,6 @@ Verify that product page is loaded successfully
 
 Verify that add to cart is worked successfully
     [Documentation]    หลังจากปุ่ม Add to cart จะตรวจสอบที่ปุ่มตะกร้าสินค้าว่ามีตัวเลขตามจำนวนสิ้นค้าที่กด Add to cart หรือไม่
-    [Arguments]    ${product_amount}
-    ${new_locator} =    common_web.Replace locator with target text    locator=${product_locator['btn_shopping_cart_number']}    replace_string=${product_amount}
+    [Arguments]    ${product_qty}
+    ${new_locator} =    common_web.Replace locator with target text    locator=${product_locator['btn_shopping_cart_number']}    replace_string=${product_qty}
     SeleniumLibrary.Page Should Contain Element    locator=${new_locator}
