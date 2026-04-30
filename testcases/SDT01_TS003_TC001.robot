@@ -19,13 +19,13 @@ SDT01_TS003_TC001 - ทดสอบการทำงานของปุ่ม
     product_page.Verify that product page is loaded successfully
 
     # [Step 5] - กดปุ่มแท็บเมนู
-    tab_menu_page.Click logout menu
+    common_web.Click open menu
 
     # [Expected 5] - ตวรจสอบหน้า Product แสดงแท็บเมนู
-    product_page.Verify that tab menu is loaded successfully
+    common_web.Verify that tab menu is loaded successfully
 
     # [Step 6] - กดปุ่ม Logout
-    product_page.Click logout in menu
+    tab_menu_page.Click logout menu
 
     #[Expected 6] - ตวรจสอบหลังจากกดปุ่ม Logout แล้วกลับมาหน้า Login
     login_page.Verify that login page is loaded successfully
