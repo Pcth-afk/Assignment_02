@@ -9,7 +9,7 @@ Click add to cart button by product name
     common_web.Wait and click element when ready    locator=${new_locator}
 
 Click shopping cart button
-    [Documentation]    กดปุ่มตะกร้าสินค้าเพื่อไปยังหน้าสินค้าที่ได้เลือกไว้
+    [Documentation]    กดปุ่มตะกร้าสินค้าเพื่อไปยังหน้า Your Cart
     common_web.Wait and click element when ready    locator=${product_locator['btn_shopping_cart']}
 
 Click open menu
