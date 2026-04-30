@@ -32,6 +32,9 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
 
     # [Step 6] - กดปุ่มตระกร้าสินค้า
     product_page.Click shopping cart button
+
+    # [Expected 6] - ตวรจสอบหน้า Your Cart ทีมีสินค้า 1 ชิ้นที่เลือกไว้
+    your_cart_page.Verify that product is displayed correctly    product_name=${product_name['product_1']}
     
     # [Step 7] - กดปุ่ม Checkout
     your_cart_page.Click checkout button
