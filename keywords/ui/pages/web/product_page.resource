@@ -12,12 +12,6 @@ Click shopping cart button
     [Documentation]    กดปุ่มตะกร้าสินค้าเพื่อไปยังหน้า Your Cart
     common_web.Wait and click element when ready    locator=${product_locator['btn_shopping_cart']}
 
-Click open menu
-    [Documentation]    
-    ...    กดปุ่มเมนูเพื่อเปิดหน้าตัวเลือก
-    ...    โดยจะมี 4 ตัวเลือกคือ All Items, About, Logout, Reset App State
-    common_web.Wait and click element when ready    locator=${product_locator['btn_menu']}
-
 Click logout in menu
     [Documentation]    กดปุ่ม Logout ในแท็บเมนูเพื่อออกจากระบบ    
     common_web.Wait and click element when ready    locator=${product_locator['txt_logout']}
@@ -35,4 +29,3 @@ Verify that add to cart is worked successfully
 Verify that tab menu is loaded successfully
     [Documentation]    ตรวจสอบว่าแท็บ menu โหลดเสร็จสมบูรณ์
     SeleniumLibrary.Wait Until Element Is Visible    locator=${product_locator['txt_logout']}    
-    
