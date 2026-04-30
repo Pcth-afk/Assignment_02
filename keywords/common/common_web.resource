@@ -3,9 +3,11 @@ Resource    ${CURDIR}/../../resources/import.resource
 
 *** Keywords ***
 Open browser and maximize browser window
-    [Documentation]    เปิด browser และขยายให้เต็มจอ 
+    [Documentation]    เปิดเบราว์เซอร์ในโหมดไม่ระบุตัวตน พร้อมขยายหน้าต่างให้เต็มจอ
     [Arguments]    ${url}    ${browser}=chrome
-    SeleniumLibrary.Open Browser    url=${url}    browser=${browser}
+    ${options}=    BuiltIn.Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    BuiltIn.Call Method    ${options}    add_argument    --incognito
+    SeleniumLibrary.Open Browser    url=${url}    browser=${browser}    options=${options}
     SeleniumLibrary.Maximize Browser Window
 
 Wait and click element when ready
