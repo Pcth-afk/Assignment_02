@@ -21,20 +21,31 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
     # [Step 1-4] - เปิดเว็บไซต์กรอก username password และกด Login เพื่อเข้าสู่หน้า Product
     login_feature.Open website and login to saucedemo web    usrname=${user_info['user_name']['standard']}    password=${user_info['password']}
     
+    # [Expected 4] - ตรวจสอบหน้า Product ว่าโหลดเสร็จสมบูรณ์
+    product_page.Verify that product page is loaded successfully
+
     # [Step 5] - กดปุ่ม Add to cart ที่สินค้าที่ 1
     product_page.Click add to cart button by product name    product_name=${product_add_to_cart_id['product_1']}
-    
+
+    # [Expected 5] - มีจำนวนสินค้า 1 ชิ้นปรากฏที่ปุ่มตะกร้าสินค้า
+    product_page.Verify that add to cart is worked successfully    product_amount=1
+
     # [Step 6] - กดปุ่มตระกร้าสินค้า
     product_page.Click shopping cart button
     
     # [Step 7] - กดปุ่ม Checkout
     your_cart_page.Click checkout button
    
-    # [Step 8-10] - กรอก firstname lastname postalcode และกดปุ่ม Continue เพื่อเข้าสู้หน้า Checkout: Overview
+    # [Step 8-11] - กรอก firstname lastname postalcode และกดปุ่ม Continue เพื่อเข้าสู้หน้า Checkout: Overview
     checkout_your_information_feature.Input shipping address details    firstname=${shipping_address['first_name']}    
     ...    lastname=${shipping_address['last_name']}    
     ...    postalcode=${shipping_address['postal_code']}
-    
-    # [Step 11-12] - กดปุ่ม Fisnish เพื่อเข้าสู้หน้า Checkout: Complete!
+
+    #[Expected 11] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Overview สำเร็จ
+    checkout_overview_page.Verify that checkout: overview page is loaded successfully
+
+    # [Step 12] - กดปุ่ม Fisnish เพื่อเข้าสู้หน้า Checkout: Complete!
     checkout_overview_page.Click finish button
+
+    #[Expected 12] - ตรวจสอบว่าเข้าสู่หน้าเว็บไซต์ Checkout: Complete! สำเร็จ
     checkout_overview_page.Verify that product is purchased completely

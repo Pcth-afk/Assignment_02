@@ -7,3 +7,5 @@ Resource    ${CURDIR}/../import.resource
 ...    txt_logout=id=logout_sidebar_link
 ...    btn_shopping_cart=id=shopping_cart_container
 ...    btn_add_to_cart=id=add-to-cart-***replace***
+...    lbl_product=xpath=//span[@class='title']
+...    btn_shopping_cart_number=xpath=//span[@class='shopping_cart_badge' and text()='***replace***']
