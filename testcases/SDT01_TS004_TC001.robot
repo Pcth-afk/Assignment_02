@@ -14,4 +14,4 @@ SDT01_TS004_TC001 - ทดสอบการ Login ด้วยบัญชี�
     login_feature.Open website and login to saucedemo web    usrname=${user_info['user_name']['locked']}    password=${user_info['password']}
 
     # [Expected 4] - หลังจากกด Login จะแจ้งเตือน 'Epic sadface: Sorry, this user has been locked out.'
-    SeleniumLibrary.Page Should Contain Element    locator=${login_locator['txt_error_login']}
+    login_page.Verify that error message is appeared correctly

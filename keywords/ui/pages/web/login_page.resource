@@ -19,3 +19,7 @@ Input password
 Verify that login page is loaded successfully
     [Documentation]    ตรวจสอบว่าหน้าเว็บ Login โหลดเสร็จสมบูรณ์   
     SeleniumLibrary.Page Should Contain Element    locator=${login_locator['btn_login']}
+
+Verify that error message is appeared correctly
+    [Documentation]    ตรวจสอบข้อความ 'Epic sadface: Sorry, this user has been locked out.' ปรากฏขึ้นเมื่อ Login ด้วย username ที่ถูกบล็อค
+    SeleniumLibrary.Page Should Contain Element    locator=${login_locator['txt_error_login']}

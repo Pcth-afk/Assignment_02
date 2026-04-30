@@ -29,4 +29,3 @@ SDT01_TS003_TC001 - ทดสอบการทำงานของปุ่ม
 
     #[Expected 6] - ตวรจสอบหลังจากกดปุ่ม Logout แล้วกลับมาหน้า Login
     login_page.Verify that login page is loaded successfully
-    
