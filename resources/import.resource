@@ -27,3 +27,4 @@ Resource    ${CURDIR}/locators/checkout_overview_locator.resource
 # YAML
 Variables    ${CURDIR}/settings/setting.yaml
 Variables    ${CURDIR}/testdata/testdata.yaml
+Variables    ${CURDIR}/translation/web/th.yaml

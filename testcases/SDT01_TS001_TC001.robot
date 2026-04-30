@@ -33,11 +33,15 @@ SDT01_TS001_TC001 - ทดสอบซื้อสินค้าให้สำ
     # [Step 6] - กดปุ่มตระกร้าสินค้า
     product_page.Click shopping cart button
 
-    # [Expected 6] - ตวรจสอบหน้า Your Cart ทีมีสินค้า 1 ชิ้นที่เลือกไว้
+    # [Expected 6] - ตวรจสอบหน้า Your Cart ว่าโหลดสำเร็จและมีสินค้า 1 ชิ้นที่เลือกไว้
+    your_cart_page.Verify that your cart page is loaded successfully
     your_cart_page.Verify that product is displayed correctly    product_name=${product_name['product_1']}
     
     # [Step 7] - กดปุ่ม Checkout
     your_cart_page.Click checkout button
+
+    # [Expected 7] - ตวรจสอบหน้า  Checkout: Your Information ว่าโหลดเสร็จสมบูรณ์
+    checkout_your_information_page.Verify that checkout: your information page is loaded successfully
    
     # [Step 8-11] - กรอก firstname lastname postalcode และกดปุ่ม Continue เพื่อเข้าสู้หน้า Checkout: Overview
     checkout_your_information_feature.Input shipping address details    firstname=${shipping_address['first_name']}    
